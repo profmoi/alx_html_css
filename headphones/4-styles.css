@@ -51,15 +51,17 @@ p {
   height: 100vh;
 }
 
+.logo {
+  width: auto;
+  height: auto;
+}
+
 nav {
-  #background-color: green;
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 20px;
-  #width: 90%;
-  #margin: auto;
 }
 
 .navlinks {
@@ -231,42 +233,40 @@ button:hover {
   color: var(--white);
 }
 
-.learn_imgg {
-  width: 65%;
-  height: 50px;
-  padding-top: 10%;
-  padding-bottom: 10%;
-  margin: auto;
+.bgholder {
   display: flex;
   justify-content: space-between;
-  align-items: center; /* Centers vertically */
+  align-items: center;
+  margin: auto;
+  width: 70%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.background-image {
+  background-image: url("images/pentagone.png");
+  background-size: contain; /* Resizes the image to fit the container */
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 192px; /* Sets the width of the container */
+  height: 192px; /* Sets the height of the container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Container holding the image and the text */
-.cont {
-  position: relative;
-  text-align: center;
+.centered-text {
   color: white;
-}
-.cont img {
-  height: 190px;
-  width: 190px;
-}
-
-/* Centered text */
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  text-align: center;
+  padding: 10px;
 }
 
-.centered h3 {
+.centered-text h3 {
   font-size: 46px;
   font-weight: bold;
 }
 
-.centered p {
+.centered-text p {
   font-size: 12px;
 }
 
@@ -291,70 +291,48 @@ form {
   margin: 30px;
 }
 
-/* 
+/* Footer css*/
+footer {
+  background-color: #071629;
+  color: white;
+  padding-top: 6%;
+  padding-bottom: 2%;
+}
 
-.learn_img {
-  width: 80%;
-  padding-top: 5%;
+.footer_h {
+  width: 70%;
   margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; /* Centers vertically 
   text-align: center;
 }
-.img_ph {
-  padding: 50px;
+
+.footer_social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.img_ph span {
-  color: var(--pink);
-  font-size: 6rem;
+.footer_h p {
+  font-size: 12px;
+  padding-top: 6%;
+  color: #9da0a3;
 }
-
-.img_ph h3 {
-  font-family: 18px;
-  font-weight: bold;
-  color: var(--white);
-}
-
-.weather_p {
-  background-color: #c271ff;
-  padding-top: 7.5%;
-  padding-bottom: 7.5%;
-}
-
-.weather_contain {
-  width: 65%;
-  margin: auto;
-  align-items: center; /* Centers vertically 
-  font-size: 22px;
-  color: var(--blue);
-}
-
-.weather_contain div {
-  padding-left: 50px;
-}
-
-.weather_p img {
-  border-radius: 50%;
-}
-
-.weather_p h3 {
-  font-weight: bold;
-  padding-top: 20px;
-}
-
-.weather_p p {
-  font-style: italic;
-}
-
-*/
 
 @media (max-width: 480px) {
   .checkbtn {
     display: block;
     #order: 1;
     margin-right: 20px;
+  }
+
+  .logo {
+    width: 162px;
+    height: 32px;
+  }
+
+  .container {
+    background-size: cover;
+    height: auto;
+    background-repeat: no-repeat;
   }
 
   .navlinks {
@@ -381,5 +359,82 @@ form {
 
   #check:checked ~ .navlinks {
     right: 0;
+  }
+
+  .header {
+    width: 66%;
+    margin: auto;
+  }
+
+  .header button {
+    margin-top: 4%;
+  }
+
+  .header_txt {
+    width: 60%;
+    margin: auto;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+
+  /* Beginning css for what we do sessin */
+
+  .whatwedo_container {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    width: 90%;
+    margin: auto;
+  }
+
+  .learn_img {
+    flex-direction: column;
+  }
+
+  .img_ph {
+    width: 60%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  /* Our result section */
+
+  .ourresult_container {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    width: 90%;
+  }
+
+  .header_t {
+    font-weight: 200;
+    line-height: 1.5;
+    padding-top: 4%;
+    color: var(--white);
+  }
+
+  .bgholder {
+    flex-direction: column;
+  }
+
+  .background-image {
+    width: 190px; /* Sets the width of the container */
+    height: 190px; /* Sets the height of the container */
+    margin-top: 10%;
+  }
+
+  form {
+    padding-top: 10%;
+    padding-bottom: 5%;
+    width: 50%;
+    margin: auto;
+  }
+
+  /* Footer css*/
+
+  .footer_social {
+    flex-direction: column;
+  }
+
+  .footer_social div {
+    padding: 5%;
   }
 }

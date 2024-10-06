@@ -232,64 +232,44 @@ button:hover {
   color: var(--white);
 }
 
-/* 
-
-.learn_img {
-  width: 80%;
-  padding-top: 5%;
+.learn_imgg {
+  width: 65%;
+  height: 50px;
+  padding-top: 10%;
+  padding-bottom: 10%;
   margin: auto;
   display: flex;
   justify-content: space-between;
-  align-items: center; /* Centers vertically 
+  align-items: center; /* Centers vertically */
+}
+
+/* Container holding the image and the text */
+.cont {
+  position: relative;
   text-align: center;
+  color: white;
 }
-.img_ph {
-  padding: 50px;
-}
-
-.img_ph span {
-  color: var(--pink);
-  font-size: 6rem;
+.cont img {
+  height: 190px;
+  width: 190px;
 }
 
-.img_ph h3 {
-  font-family: 18px;
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centered h3 {
+  font-size: 46px;
   font-weight: bold;
-  color: var(--white);
 }
 
-.weather_p {
-  background-color: #c271ff;
-  padding-top: 7.5%;
-  padding-bottom: 7.5%;
+.centered p {
+  font-size: 12px;
 }
-
-.weather_contain {
-  width: 65%;
-  margin: auto;
-  align-items: center; /* Centers vertically 
-  font-size: 22px;
-  color: var(--blue);
-}
-
-.weather_contain div {
-  padding-left: 50px;
-}
-
-.weather_p img {
-  border-radius: 50%;
-}
-
-.weather_p h3 {
-  font-weight: bold;
-  padding-top: 20px;
-}
-
-.weather_p p {
-  font-style: italic;
-}
-
-*/
 
 @media (max-width: 480px) {
   .checkbtn {
